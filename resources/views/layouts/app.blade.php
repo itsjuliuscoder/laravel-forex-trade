@@ -14,19 +14,6 @@
 
         <!-- Responsive CSS -->
         <link href="css/responsive.css" rel="stylesheet">
-        <script type="text/javascript">
-            //==================================
-            //    ACCORDION WITH TOGGLE ICONS
-            //==================================
-            function toggleIcon(e) {
-              $(e.target)
-                .prev('.panel-heading')
-                .find(".more-less")
-                .toggleClass('fa-plus fa-minus');
-            }
-            $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-            $('.panel-group').on('shown.bs.collapse', toggleIcon);
-        </script>
     </head>
     <body>
     <!-- Preloader Start -->
@@ -88,165 +75,13 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="get-start-area">
-                        <article class="tabs">
-                          <ul class="nav nav-tabs nav-tabs-redBorders">
-                                <li class="active">
-                                  <a data-toggle="tab" href="#home">
-                                    Tab 1 
-                                  </a>
-                                </li>
-                                <li>
-                                  <a data-toggle="tab" href="#menu1">
-                                    Tab 2
-                                  </a>
-                                </li>
-                          </ul>
-                          <div class="tab-content">
-                                <!--tab1 - home-->
-                                <div id="home" class="tab-pane fade in active">
-                                      <!-- 
-                                        ==============================
-                                        bootstrap accordion
-                                        ==============================
-                                        -->
-                                      <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-                                            <!--panel-default-->
-                                            <div class="panel panel-default">
-                                              <div class="panel-heading" role="tab" id="headingOne">
-                                                <h3 class="panel-title">
-                                                  <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    <i class="fa fa-minus more-less" aria-hidden="true"></i>
-                                                    An singulis consequat intellegat eos
-                                                  </a>
-                                                </h3>
-                                              </div>
-                                              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                  <p>
-                                                    Discere insolens et est. Id prompta rationibus definiebas per. Te mei partem civibus, vix elit soleat possim ex. Minim timeam audire no sea, erant partem dicunt ex cum. Mei cu ullum sapientem, probo blandit has at.<br><br>
-                                                    An singulis consequat intellegat eos. Nec elit falli propriae no, ius incorrupte repudiandae ut. Nam ne amet omnes, numquam docendi ius ut. Partem persequeris pri in. An incorrupte complectitur mediocritatem vis, sea nostro salutandi et.<br><br>
-                                                    Vis ex purto exerci interesset, mei eius civibest. Id prompta rationibus definiebas per. Te mei partem civibus, vix elit soleat possim ex. Minim timeam audire no sea, erant partem dicunt ex cum. Mei cu ullum sapientem, probo blandit has at.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!--panel-2-->
-                                            <div class="panel panel-default">
-                                              <div class="panel-heading" role="tab" id="headingTwo">
-                                                <h3 class="panel-title">
-                                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    <i class="fa fa-plus more-less" aria-hidden="true"></i>
-                                                    Probo laoreet officiis mei ei, sale civibus pro no, te vel partem docendi?
-                                                  </a>
-                                                </h3>
-                                              </div>
-                                              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                  <p>
-                                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!--panel-3-->
-                                            <div class="panel panel-default">
-                                              <div class="panel-heading" role="tab" id="headingThree">
-                                                <h3 class="panel-title">
-                                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    <i class="fa fa-plus more-less" aria-hidden="true"></i>
-                                                    Mucius quodsi dissentiunt in vel. Est postulant contentiones ea, nobis inermis id duo?
-                                                  </a>
-                                                </h3>
-                                              </div>
-                                              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                  <p>
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                      </div>
-                                        <!-- end
-                                        ==============================
-                                        bootstrap accordion
-                                        ==============================
-                                        -->
-                                </div>
-                                <!--tab2-->
-                                <div id="menu1" class="tab-pane fade">
-                                      <!-- 
-                                        ==============================
-                                        bootstrap accordion
-                                        ==============================
-                                        -->
-                                      <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-                                            <!--panel-default-->
-                                            <div class="panel panel-default">
-                                              <div class="panel-heading" role="tab" id="headingOne_2">
-                                                <h3 class="panel-title">
-                                                  <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                                    <i class="fa fa-minus more-less" aria-hidden="true"></i>
-                                                    Dicta facilisis sea, quando comprehensam vituperatoribus eu ius
-                                                  </a>
-                                                </h3>
-                                              </div>
-                                              <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                  <p>
-                                                    Discere insolens et est. Id prompta rationibus definiebas per. Te mei partem civibus, vix elit soleat possim ex. Minim timeam audire no sea, erant partem dicunt ex cum. Mei cu ullum sapientem, probo blandit has at.<br><br>
-                                                    An singulis consequat intellegat eos. Nec elit falli propriae no, ius incorrupte repudiandae ut. Nam ne amet omnes, numquam docendi ius ut. Partem persequeris pri in. An incorrupte complectitur mediocritatem vis, sea nostro salutandi et. Vis ex purto exerci interesset, mei eius civibus evertitur et. Consul iriure appetere at sed. Te qui modo propriae temporibus, illud modus mei cu. Epicurei adipisci no eum, cum iuvaret probatus deseruisse ei. Deleniti pericula cum ne, ea exerci complectitur est. Summo indoctum nec ut. Discere insolens et est. Id prompta rationibus definiebas per. Te mei partem civibus, vix elit soleat possim ex. Minim timeam audire no sea, erant partem dicunt ex cum. Mei cu ullum sapientem, probo blandit has at.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!--panel-2-->
-                                            <div class="panel panel-default">
-                                              <div class="panel-heading" role="tab" id="headingTwo_2">
-                                                <h3 class="panel-title">
-                                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                                    <i class="fa fa-plus more-less" aria-hidden="true"></i>
-                                                    Probo laoreet officiis mei ei, sale civibus pro no, te vel partem docendi?
-                                                  </a>
-                                                </h3>
-                                              </div>
-                                              <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                  <p>
-                                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!--panel-3-->
-                                            <div class="panel panel-default">
-                                              <div class="panel-heading" role="tab" id="headingThree_2">
-                                                <h3 class="panel-title">
-                                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-                                                    <i class="fa fa-plus more-less" aria-hidden="true"></i>
-                                                    Mucius quodsi dissentiunt in vel. Est postulant contentiones ea, nobis inermis id duo?
-                                                  </a>
-                                                </h3>
-                                              </div>
-                                              <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                  <p>
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                      </div>
-                                      <!-- end
-                                      ==============================
-                                      bootstrap accordion
-                                      ==============================
-                                      -->
-                                </div>
-                          </div>
-                        </article>
-                    </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <input type="" name="">
+                                </form>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -896,9 +731,6 @@
     </div>
 </div>
 <!-- end of modals -->
-<!-- Latest compiled and minified JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 
 </html>

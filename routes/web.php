@@ -16,6 +16,8 @@
 // });
 
 Route::get('/', 'PagesController@index');
+Route::get('/login', 'PagesController@login');
+Route::get('/register', 'PagesController@register');
 Route::get('/home', 'UserController@home');
 Route::get('/profile', 'UserController@profile');
 
