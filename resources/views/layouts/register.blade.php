@@ -9,13 +9,18 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>@yield('title', 'Register Page')</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
 
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <style>
+      body {
+
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -30,29 +35,55 @@
           font-size: 3.5rem;
         }
       }
+
+      .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+      }
+      .form-signin .checkbox {
+        font-weight: 400;
+      }
+      .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .form-signin .form-control:focus {
+        z-index: 2;
+      }
+      .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
   </head>
-  <body class="text-center">
-    <div class="card">
-      <form class="form-signin">
-        <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Please Register Below</h1>
-        <label for="inputName" class="sr-only">Full Name</label>
-        <input type="name" id="inputName" class="form-control" placeholder="Full Name" required autofocus>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
-      </form>
+  <body class="text-center" style="background-color: #ccc !important;">
+    <div class="card" style="background-color: #ccc !important;">
+      <div class="card-body">
+          <form class="form-signin"><br><br><br><br>
+            <h2>Forex Trade </h2>
+            <p>Kindly Enter your details below</p>
+            <label for="inputName" class="sr-only">Full Name</label>
+            <input type="name" id="inputName" class="form-control" placeholder="Full Name" required autofocus>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control mt-2" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <p>Already a user?  <a href="/login">Login Here</a> </p>
+            <input type="password" id="inputPassword" class="form-control mt-2" placeholder="Password" required>
+            <button class="btn btn-lg btn-success btn-block" type="submit">Sign Up  <span class="fa fa-arrow-right"></span> </button>
+            <p class="mt-5 mb-3 text-muted">&copy;  <?php echo date('Y'); ?> </p>
+          </form>
+      </div>
     </div>  
 </body>
 </html>

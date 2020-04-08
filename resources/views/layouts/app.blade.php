@@ -43,9 +43,10 @@
                                     <!-- <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
                                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" target="_blank" href="/login"><b>Log In</b></a></li>
                                 </ul>
                                 <div class="sing-up-button d-lg-none">
-                                    <a href="#">Sign Up Free</a>
+                                    <a href="/register">Sign Up Free</a>
                                 </div>
                             </div>
                         </nav>
@@ -54,7 +55,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="#">Sign Up Free</a>
+                        <a href="/register">Sign Up Free</a>
                     </div>
                 </div>
             </div>
@@ -69,19 +70,58 @@
                 <div class="col-md-5">
                     <div class="wellcome-heading">
                         <h2>Trade and Profit at your Convinence</h2>
-                        <h3>C</h3>
-                        <p>TRADE THE MARKETS BY FOLLOWING THE SIGNALS GIVEN BY OUR EXPERTS</p>
-                        <a href="#" class="btn btn-danger"><i class="fa fa-trademark"></i>  Start Trading</a>
+                        <h3>C</h3><br>
+                        <p>TRADE THE MARKETS BY FOLLOWING THE SIGNALS GIVEN BY OUR EXPERTS</p><br><br>
+                        <a href="#" class="btn btn-danger">Start Trading <i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-7">
-                        <div class="card">
-                            <div class="card-body">
-                                <form>
-                                    <input type="" name="">
-                                </form>
+                    <div class="page-wrapper mt-5"><br><br><br><br>
+                        <div class="wrapper wrapper--w900">
+                            <div class="card card-6">
+                                <div class="card-heading">
+                                    <h2 class="title">Create a Free Account</h2>
+                                </div>
+                                <div class="card-body">
+                                    <form method="POST">
+                                        <div class="form-row">
+                                            <div class="name">Full name</div>
+                                            <div class="value">
+                                                <input class="input--style-6" type="text" name="full_name" placeholder="John Doe">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="name">Email address</div>
+                                            <div class="value">
+                                                <div class="input-group">
+                                                    <input class="input--style-6" type="email" name="email" placeholder="example@email.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="name">Password</div>
+                                            <div class="value">
+                                                <div class="input-group">
+                                                    <input class="input--style-6" type="password" name="password" placeholder="xxxxxxxxxxx">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="form-row">
+                                            <div class="name">Message</div>
+                                            <div class="value">
+                                                <div class="input-group">
+                                                    <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </form>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn--radius-2 btn--blue-2" type="submit">Sign Up</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -730,6 +770,7 @@
       </div>
     </div>
 </div>
+<script type="text/javascript" src="js/global.js"></script>
 <!-- end of modals -->
 </body>
 
